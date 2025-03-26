@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './components/Homepage/Homepage.jsx
+import Homepage from './components/Homepage/Homepage.jsx'
 import AboutUs from './components/AboutUs/AboutUs.jsx';
-import MapTest from './components/Map/Map.jsx';
+import Map from './components/Map/Map.jsx';
 import { io } from 'socket.io-client';
 
 const socket = io('http://68.183.159.42:8080');
@@ -42,7 +42,7 @@ const App = () => {
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<AboutUs />} />
           {/* Pass droneData as a prop to MapTest */}
           <Route path="/map" element={<Map droneData={droneData} />} />

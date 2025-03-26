@@ -7,7 +7,7 @@ const containerStyle = {
   };
   
 
-function Map({ data }) {
+function Map({ droneData }) {
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
@@ -22,7 +22,7 @@ function Map({ data }) {
       zoom={10}
     >
       {/* Render markers dynamically */}
-      {data.map((drone) => (
+      {droneData.map((drone) => (
         <Marker
           key={drone._id}
           position={{ lat: drone.gps.latitude, lng: drone.gps.longitude }}

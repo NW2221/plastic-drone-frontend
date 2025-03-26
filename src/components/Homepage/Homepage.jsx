@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Homepage.css'
 
-const HomePage = () => {
+const Homepage = () => {
   return (
     <div className='container'>
       <h1>Welcome to the Drone Tracking App</h1>
@@ -30,4 +30,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Homepage;
