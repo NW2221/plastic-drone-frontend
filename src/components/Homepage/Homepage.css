@@ -1,0 +1,32 @@
+.homepage-map {
+	width: 100%;
+	height: 400px;
+}
+
+.container {
+	display: flex;
+    background: aquamarine;
+}
+
+.test {
+	background-color: blue;
+}
+
+.test:hover {
+	background-color: red;
+}
+
+.buttonContainer {
+	display: flex;
+	background-color: aliceblue;
+}
+
+@media (max-width: 600px) {
+
+.container {
+	display: flex;
+	background: aquamarine;
+	flex-direction: column;
+}
+
+}
